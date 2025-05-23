@@ -30,4 +30,3 @@ This dashboard visualizes and analyzes long-term climate trends using real-world
 ## 📚 Data Source
 [Example: NASA GISTEMP](https://data.giss.nasa.gov/gistemp/)
 
-##Team: Data Blooded
