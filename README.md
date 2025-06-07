@@ -23,64 +23,80 @@ This dashboard visualizes and analyzes long-term climate trends using real-world
    jupyter notebook notebooks/eda.ipynb
 4. Open the dashboard in your browser by opening:
    open visual_dashboard.html
-📊 Key Features
-Data cleaning and handling of missing values
+## 📊 Key Features
 
-Outlier detection techniques
+- Data cleaning and handling of missing values  
+- Outlier detection techniques  
+- Summary statistics calculation  
+- Correlation analysis of climate indicators  
+- Visualization of global temperature trends and climate data  
 
-Summary statistics calculation
+---
 
-Correlation analysis of climate indicators
+## 📈 Visualizations Included
 
-Visualization of global temperature trends and climate data
+| Visualization Type | Description                                   | File Location                      |
+|--------------------|-----------------------------------------------|----------------------------------|
+| 📈 Line Chart       | Global temperature anomaly (1880–present)    | `visuals/line_temp_trend.html`   |
+| 📦 Box Plot        | Decadal temperature variability                | `visuals/boxplot_decade.png`     |
+| 🔥 Heatmap          | Correlation matrix between climate indicators | `visuals/correlation_heatmap.png`|
+| ✨ Interactive Plot | Year-wise temperature anomalies with filtering| `visuals/interactive_temp.html`  |
 
-📈 Visualizations Included
-Visualization Type	Description	File Location
-📈 Line Chart	Global temperature anomaly (1880–present)	visuals/line_temp_trend.html
-📦 Box Plot	Decadal temperature variability	visuals/boxplot_decade.png
-🔥 Heatmap	Correlation matrix between climate indicators	visuals/correlation_heatmap.png
-✨ Interactive Plot	Year-wise temperature anomalies with filtering	visuals/interactive_temp.html
+---
 
-🎯 Interpretation Highlights
+## 🎯 Interpretation Highlights
+
 The visualizations tell a cohesive story about climate change trends:
 
-Global temperatures are steadily rising, especially accelerating after the 1980s.
+- **Global temperatures are steadily rising**, especially accelerating after the 1980s.  
+- **Decadal shifts** show fewer cold outliers and a higher median temperature anomaly.  
+- Strong **positive correlations** exist between CO₂ levels, sea level rise, and temperature increases.  
+- **Interactive filters** enable detailed exploration of how specific years and decades contribute to climate trends.  
 
-Decadal shifts show fewer cold outliers and a higher median temperature anomaly.
+For a detailed storytelling analysis, see [`interpretation_storytelling.md`](interpretation_storytelling.md).
 
-Strong positive correlations exist between CO₂ levels, sea level rise, and temperature increases.
+---
 
-Interactive filters enable detailed exploration of how specific years and decades contribute to climate trends.
+## 📁 Complete File Structure
 
-For a detailed storytelling analysis, see interpretation_storytelling.md.
-
-📁 Complete File Structure
-kotlin
-Copy
-Edit
 climate-dashboard/
 │
 ├── data/
-│   └── (raw climate datasets)
+│ └── (raw climate datasets)
 │
 ├── notebooks/
-│   └── eda.ipynb
+│ └── eda.ipynb
 │
 ├── visuals/
-│   ├── line_temp_trend.html
-│   ├── interactive_temp.html
-│   ├── boxplot_decade.png
-│   └── correlation_heatmap.png
+│ ├── line_temp_trend.html
+│ ├── interactive_temp.html
+│ ├── boxplot_decade.png
+│ └── correlation_heatmap.png
 │
 ├── visual_dashboard.html
 ├── visual_style.css
 ├── visual_script.js
 ├── interpretation_storytelling.md
 └── README.md
-🛠️ Technologies Used
-Frontend: HTML, CSS, JavaScript
 
-Data Analysis & Visualization: Python, Plotly, Seaborn, Matplotlib
 
-📚 Data Source
-This project uses simulated datasets inspired by NASA GISTEMP global temperature records.
+---
+
+## 🛠️ Technologies Used
+
+- **Frontend:** HTML, CSS, JavaScript  
+- **Data Analysis & Visualization:** Python, Plotly, Seaborn, Matplotlib  
+
+---
+
+## 📚 Data Source
+
+This project uses simulated datasets inspired by [NASA GISTEMP](https://data.giss.nasa.gov/gistemp/) global temperature records.
+
+---
+
+## 📜 License
+
+MIT License
+If you want, I can help you generate any of these files or set up GitHub Pages for easy demo access!
+---
