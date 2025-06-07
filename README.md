@@ -1,64 +1,86 @@
-🌍 Climate Change Impact Dashboard
-📌 Project Description
+# 🌍 Climate Change Impact Dashboard
+
+## 📌 Project Description
 This dashboard visualizes and analyzes long-term climate trends using real-world datasets. It uncovers patterns and insights explaining the effects of climate change.
 
-📁 Project Structure
-data/: Raw climate datasets
-notebooks/eda.ipynb: Data preprocessing & EDA notebook
-visuals/: Saved plots
-requirements.txt: Python dependencies
-⚙️ How to Run
-Clone the repo
-Install dependencies
-Run the notebook
+---
+
+## 📁 Project Structure
+- `data/`: Raw climate datasets  
+- `notebooks/eda.ipynb`: Data preprocessing & exploratory data analysis notebook  
+- `visuals/`: Saved plots and interactive charts  
+- `requirements.txt`: Python dependencies  
+
+---
+
+## ⚙️ How to Run
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/your-username/climate-dashboard.git
+2. Install dependencies:
+   pip install -r requirements.txt
+3. Run the notebook to preprocess data and generate visualizations:
+   jupyter notebook notebooks/eda.ipynb
+4. Open the dashboard in your browser by opening:
+   open visual_dashboard.html
 📊 Key Features
-Cleaning and handling missing data
-Outlier detection
-Summary statistics
-Correlation analysis
-Visualization of global temperature trends
-📈 Sample Visualizations
-Line chart: Temperature anomaly over years
-Box plot: Decadal comparison
-Correlation heatmap
-Interactive time series using Plotly
-📚 Data Source
-Example: NASA GISTEMP
+Data cleaning and handling of missing values
 
-🌍 Climate Change Impact Dashboard
-A data-driven dashboard to explore, visualize, and interpret the long-term trends and impact of climate change using real-world datasets.
+Outlier detection techniques
 
-📌 Project Objectives
-Analyze global temperature anomalies over time
-Identify long-term warming trends and variability
-Correlate climate indicators such as CO₂, sea level rise, and ice extent
-Present insights through static and interactive visualizations
-Encourage data-driven awareness of climate change
-📊 Features & Visualizations
-Type	Description	File
+Summary statistics calculation
+
+Correlation analysis of climate indicators
+
+Visualization of global temperature trends and climate data
+
+📈 Visualizations Included
+Visualization Type	Description	File Location
 📈 Line Chart	Global temperature anomaly (1880–present)	visuals/line_temp_trend.html
 📦 Box Plot	Decadal temperature variability	visuals/boxplot_decade.png
-🔥 Heatmap	Correlation between climate indicators	visuals/correlation_heatmap.png
-✨ Interactive	Explore anomalies by year and decade	visuals/interactive_temp.html
+🔥 Heatmap	Correlation matrix between climate indicators	visuals/correlation_heatmap.png
+✨ Interactive Plot	Year-wise temperature anomalies with filtering	visuals/interactive_temp.html
+
 🎯 Interpretation Highlights
-The visualizations tell a cohesive story:
+The visualizations tell a cohesive story about climate change trends:
 
-Global temperatures are steadily rising, especially after the 1980s.
-Decadal shifts show fewer cold outliers and consistently higher anomalies.
-Strong positive correlations exist between CO₂, sea level rise, and temperature.
-Interactive filters allow users to investigate how specific years fit into broader climate trends.
-👉 Full storytelling analysis in interpretation_storytelling.md
+Global temperatures are steadily rising, especially accelerating after the 1980s.
 
-📁 File Structure
-climate-dashboard/ │ ├── visuals/ │ ├── line_temp_trend.html │ ├── interactive_temp.html │ ├── boxplot_decade.png │ └── correlation_heatmap.png │ ├── visual_dashboard.html ├── visual_style.css ├── visual_script.js ├── interpretation_storytelling.md └── README.md
+Decadal shifts show fewer cold outliers and a higher median temperature anomaly.
 
-🛠️ How to Use
-Clone this repo:
-git clone https://github.com/your-username/climate-dashboard.git
-Open visual_dashboard.html
-Make sure the visuals folder contains the necessary charts and HTML files.
-🧠 Technologies Used HTML, CSS, JavaScript
+Strong positive correlations exist between CO₂ levels, sea level rise, and temperature increases.
 
-Python (for data analysis & visualization)
+Interactive filters enable detailed exploration of how specific years and decades contribute to climate trends.
 
-Plotly, Seaborn, Matplotlib (for generating charts)
+For a detailed storytelling analysis, see interpretation_storytelling.md.
+
+📁 Complete File Structure
+kotlin
+Copy
+Edit
+climate-dashboard/
+│
+├── data/
+│   └── (raw climate datasets)
+│
+├── notebooks/
+│   └── eda.ipynb
+│
+├── visuals/
+│   ├── line_temp_trend.html
+│   ├── interactive_temp.html
+│   ├── boxplot_decade.png
+│   └── correlation_heatmap.png
+│
+├── visual_dashboard.html
+├── visual_style.css
+├── visual_script.js
+├── interpretation_storytelling.md
+└── README.md
+🛠️ Technologies Used
+Frontend: HTML, CSS, JavaScript
+
+Data Analysis & Visualization: Python, Plotly, Seaborn, Matplotlib
+
+📚 Data Source
+This project uses simulated datasets inspired by NASA GISTEMP global temperature records.
